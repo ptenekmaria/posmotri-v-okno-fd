@@ -48,7 +48,7 @@ ol {
 }
 
 .result {
-  margin-top: 72px;
+  margin-top: 78px;
 }
 
 .result__video-container {
@@ -60,13 +60,14 @@ ol {
   width: 711px;
   object-fit: cover;
   object-position: center;
+  margin-bottom: 16px;
 }
 
 .search-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  gap: 20px;
+  gap: 40px;
 }
 
 .search-form__fieldset {
@@ -226,7 +227,7 @@ ol {
 }
 
 .content__list {
-  max-height: 283px;
+  max-height: 300px;
   width: 100%;
   overflow: auto;
   display: flex;
