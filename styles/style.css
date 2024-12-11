@@ -49,11 +49,10 @@ ol {
 
 .result {
   margin-top: 72px;
-  position: relative;
 }
 
 .result__video-container {
-  position: absolute;
+  position: relative;
 }
 
 .result__video {
@@ -67,7 +66,6 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  margin-top: 400px;
   gap: 20px;
 }
 
@@ -211,7 +209,6 @@ ol {
 
 .content__details {
   width: 399px;
-  position: relative;
 }
 
 .title {
@@ -229,16 +226,14 @@ ol {
 }
 
 .content__list {
-  height: 312px;
+  max-height: 283px;
   width: 100%;
   overflow: auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
   align-items: start;
-  position: absolute;
-  top: 215px;
-  left: 0;
+  position: relative;
 }
 
 .content__list-item {
