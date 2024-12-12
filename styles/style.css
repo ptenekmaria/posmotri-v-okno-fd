@@ -53,14 +53,13 @@ ol {
 
 .result__video-container {
   position: relative;
+  margin-bottom: 6px;
 }
 
 .result__video {
-  height: 386px;
   width: 711px;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 6px;
 }
 
 .search-form {
@@ -89,6 +88,11 @@ ol {
 .search-form__label {
   margin: 2px;
   overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -98,6 +102,11 @@ ol {
 
 .search-form__label:has(:active) {
   outline: none;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
 }
 
 .search-form__textfield {
@@ -141,20 +150,7 @@ ol {
   gap: 15px;
 }
 
-.search-form__label {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 5px;
-  align-items: center;
-}
-
-.search-form__label:hover .search-form__label-text {
-  text-decoration: underline 1px;
-  text-underline-offset: 2px;
-}
-
 .search-form__pseudo-checkbox {
-  display: inline-block;
   height: 19px;
   width: 19px;
   border: 1px solid #fff;
@@ -165,10 +161,10 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
+  display: inline-block;
   height: 15px;
   width: 15px;
   background-color: #fff;
-  background-size: cover;
 }
 
 .button {
@@ -213,7 +209,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -227,13 +223,13 @@ ol {
 }
 
 .content__list {
-  max-height: 300px;
+  max-height: 310px;
   width: 100%;
   overflow: auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   position: relative;
 }
 
@@ -285,7 +281,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
@@ -315,9 +311,8 @@ ol {
   margin: 2px;
 }
 
-li:has(.more-button) {
-  align-self: center;
-  width: 95%;
+.content__list-button:has(.more-button) {
+  width: 98%;
 }
 
 .visually-hidden {
