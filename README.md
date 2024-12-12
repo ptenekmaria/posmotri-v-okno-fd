@@ -1,1 +1,1 @@
-https://github.com/ptenekmaria/posmotri_v_okno
+https://github.com/ptenekmaria/posmotri-v-okno-fd
