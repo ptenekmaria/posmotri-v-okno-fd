@@ -60,14 +60,14 @@ ol {
   width: 711px;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 .search-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  gap: 40px;
+  gap: 20px;
 }
 
 .search-form__fieldset {
@@ -209,7 +209,7 @@ ol {
 }
 
 .content__details {
-  width: 399px;
+  width: 100%;
 }
 
 .title {
@@ -218,7 +218,7 @@ ol {
   font-weight: 700;
   line-height: 70.5px;
   text-align: left;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   text-transform: uppercase;
 }
 
@@ -251,7 +251,7 @@ ol {
   color: inherit;
   cursor: pointer;
   margin: 0 3px 0 3px;
-  width: 100%;
+  width: 98%;
 }
 
 .content__card-link:focus {
@@ -268,7 +268,8 @@ ol {
   text-underline-offset: 3px;
 }
 
-.content__card-link:active {
+.content__card-link:active,
+.content__card-link_current {
   background-color: #545050;
 }
 
@@ -316,7 +317,7 @@ ol {
 
 li:has(.more-button) {
   align-self: center;
-  width: 100%;
+  width: 95%;
 }
 
 .visually-hidden {
